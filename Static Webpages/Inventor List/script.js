@@ -125,6 +125,7 @@ const inventors = [
 
 const selectEl = document.getElementById("language-select");
 const photoEl = document.getElementById("inventor-photo");
+const photoWrapper = document.querySelector(".profile__image");
 const nameEl = document.getElementById("inventor-name");
 const metaEl = document.getElementById("inventor-meta");
 const tagEl = document.getElementById("language-tag");
@@ -135,7 +136,7 @@ function populateSelect() {
   inventors.forEach((item) => {
     const option = document.createElement("option");
     option.value = item.id;
-    option.textContent = item.language;
+    option.textContent = `${item.language} - ${item.name}`;
     selectEl.append(option);
   });
 }
@@ -148,6 +149,8 @@ function updateProfile(id) {
     photoEl.onerror = null;
     photoEl.src = fallbackImage;
   };
+  const isSquare = chosen.id === "java";
+  photoWrapper.classList.toggle("square", isSquare);
   photoEl.src = chosen.image;
   photoEl.alt = chosen.alt || `${chosen.name} portrait`;
   nameEl.textContent = chosen.name;
