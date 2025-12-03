@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Language Inventors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+  <header class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Hall of Fame</p>
+      <h1>Programming Language Inventors</h1>
+      <p class="lede">Pick a language to meet the mind who shaped it.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <div class="panel__controls">
+      <label for="language-select">Choose a language</label>
+      <div class="select-wrap">
+        <select id="language-select"></select>
+        <span class="select-arrow">▼</span>
+      </div>
+    </div>
+
+    <section class="profile" aria-live="polite">
+      <figure class="profile__image">
+        <img id="inventor-photo" src="" alt="Inventor portrait">
+      </figure>
+      <div class="profile__details">
+        <p class="tag" id="language-tag"></p>
+        <h2 id="inventor-name"></h2>
+        <p class="meta" id="inventor-meta"></p>
+        <p id="inventor-bio"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
