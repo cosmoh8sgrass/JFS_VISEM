@@ -20,7 +20,7 @@ const inventors = [
     language: "Java",
     name: "James Gosling",
     year: 1995,
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/James_Gosling_2008.jpg",
+    image: "james-gosling-square.jpg",
     bio: "Designed Java at Sun Microsystems with the philosophy of write-once-run-anywhere and a strong focus on stability, tooling, and a robust standard library.",
   },
   {
@@ -149,8 +149,9 @@ function updateProfile(id) {
     photoEl.onerror = null;
     photoEl.src = fallbackImage;
   };
-  const isSquare = chosen.id === "java";
-  photoWrapper.classList.toggle("square", isSquare);
+  const isJava = chosen.id === "java";
+  photoWrapper.classList.toggle("square", isJava);
+  photoWrapper.classList.toggle("blow-loop", isJava);
   photoEl.src = chosen.image;
   photoEl.alt = chosen.alt || `${chosen.name} portrait`;
   nameEl.textContent = chosen.name;
