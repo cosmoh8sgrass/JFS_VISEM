@@ -20,7 +20,7 @@ const inventors = [
     language: "Java",
     name: "James Gosling",
     year: 1995,
-    image: "james-gosling-square.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/James_Gosling_2008.jpg",
     bio: "Designed Java at Sun Microsystems with the philosophy of write-once-run-anywhere and a strong focus on stability, tooling, and a robust standard library.",
   },
   {
