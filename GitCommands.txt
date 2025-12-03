@@ -1,0 +1,20 @@
+1. git init
+2. git add .
+3. git commit -m "message"
+4. git remote add origin <url>
+5. git push origin master
+
+-----------
+
+If you can add any files in local repository or you can change the existing files in local repository
+
+1. git status
+2. git add .
+3. git commit -m "message"
+4. git push origin master
+
+--------------
+
+If you want to retrieve the remote repository to local
+
+git clone <url>
