@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <form class="registration-form">
+      <h1>Course Registration Form</h1>
+
+      <label for="studentName">Student Name</label>
+      <input type="text" id="studentName" name="studentName" placeholder="Enter your name">
+
+      <div class="subjects">
+        <p class="section-title">Select Subjects</p>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-ds" data-price="1000">
+          <label for="subject-ds">Data Structures ($1000)</label>
+        </div>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-os" data-price="1200">
+          <label for="subject-os">Operating Systems ($1200)</label>
+        </div>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-dbms" data-price="1500">
+          <label for="subject-dbms">DBMS ($1500)</label>
+        </div>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-cn" data-price="1800">
+          <label for="subject-cn">Computer Networks ($1800)</label>
+        </div>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-java" data-price="2000">
+          <label for="subject-java">Java Programming ($2000)</label>
+        </div>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-jfs" data-price="5000">
+          <label for="subject-jfs">JFS ($5000)</label>
+        </div>
+        <div class="subject-option">
+          <input type="checkbox" id="subject-cp" data-price="6000">
+          <label for="subject-cp">CP ($6000)</label>
+        </div>
+      </div>
+
+      <div class="total">
+        Total Registration Fees: $<span id="totalAmount">0</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Registration</button>
+
+      <div id="submissionMessage" class="message" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
