@@ -125,6 +125,39 @@ input[type="text"]:focus {
   line-height: 1.5;
 }
 
+.message-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.message-row {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.message-label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.subjects-label {
+  margin-top: 6px;
+}
+
+.message-value {
+  color: #1f2937;
+}
+
+.message-list {
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+  list-style: decimal;
+}
+
 .message.success {
   display: block;
   border-color: #9fc5ff;
